@@ -6,6 +6,5 @@ Then I explored the feature distributions. The size data was right-skewed, which
 
 Next came spatial analysis. I used the centroid coordinates to calculate clustering via nearest-neighbor distances. The barnacles weren’t randomly spread out; they were clustered in tight zones, likely tied to microhabitat preference.
 
-For the modeling side, I assumed a barnacle detection model already exists. I defined what its input/output would look like, then mocked up what a human-in-the-loop correction system might do. The idea was to explore how scientists could interact with a model to validate predictions or flag edge cases.
+On the modeling side, I assumed a barnacle detection model already exists. I defined the input and output, and mocked up how scientists might interact with it.The Streamlit app (app.py) lets you interactively explore the data. To run it, make sure you have python installed and then install the core packages. The full analysis pipeline is also in the Jupyter notebook (Barnacle_Data_Exploration.ipynb). You can launch it with jupyter notebook after installing the same dependencies. Everything (images, masks, feature extraction tools, and documentation) is in this repo.
 
-Lastly, I built a Streamlit app (app.py) for visualizing everything. You can explore the traits, zoom into spatial patterns, and export summaries.
